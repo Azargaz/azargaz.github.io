@@ -19,20 +19,24 @@ export default {
 
 <style>
 #app {
-	font-family: "Avenir", Helvetica, Arial, sans-serif;
+	font-family: "Nunito", BlinkMacSystemFont, -apple-system, Segoe UI, 
+	Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, 
+	Helvetica Neue, Helvetica, Arial, sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	text-align: center;
 	color: #2c3e50;
-	/* margin-top: 60px; */
+	margin-top: 30px;
 }
 
 body {
-	background-color: black;
+	background-color: #1d1f2b;
 }
 
 .navbar-bg {
-	background-color: white;
+	background-color: rgba(0,0,0,0);
+	color: white;
+	margin: 0px 50px;
 }
 
 .bg-img {
@@ -40,8 +44,8 @@ body {
     width: 100vw;
 
     background-image: url("./assets/code_bg.png");
-    filter: blur(3px);
-    -webkit-filter: blur(3px);
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
 
     position: absolute;
     top: 0;
@@ -54,11 +58,13 @@ body {
 }
 
 .jumbotron {
-    color: white;
-	text-shadow: 0.1rem 0.1rem 0.1rem black;
-
-    background-color: rgb(0,0,0);
+	color: #fff;
+    background-color: #1d1f2b;
     background-color: rgba(0,0,0,0);
+}
+
+.jumbotron .lead {
+    color: #01ffa5;
 }
 
 </style>
