@@ -1,10 +1,10 @@
 <template>
     <div>
         <b-jumbotron>
-            <template v-slot:header>HOME PAGE</template>
+            <template v-slot:header>{{ $t('home.title') }}</template>
 
             <template v-slot:lead>
-            Home sweet home...
+                {{ $t('home.subtitle') }}
             </template>
 
             <hr class="my-4">

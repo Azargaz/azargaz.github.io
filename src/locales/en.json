@@ -1,0 +1,15 @@
+{
+	"navbar": {
+		"about": "About",
+		"skills": "Skills",
+		"projects": "Projects",
+		"contact": "Contact",
+		"en": "English",
+		"pl": "Polish"
+	},
+	"home": {
+		"title": "HOME PAGE",
+		"subtitle": "Home, sweet home..."
+	},
+	"search": "Search"
+}

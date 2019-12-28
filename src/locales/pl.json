@@ -1,0 +1,15 @@
+{
+	"navbar": {
+		"about": "O mnie",
+		"skills": "Umiejętności",
+		"projects": "Projekty",
+		"contact": "Kontakt",
+		"en": "Angielski",
+		"pl": "Polski"
+	},
+	"home": {
+		"title": "STRONA DOMOWA",
+		"subtitle": "Nie ma to jak w domu..."
+	},
+	"search": "Szukaj"
+}

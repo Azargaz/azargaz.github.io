@@ -1,7 +1,7 @@
 <template>
     <div>
         <b-navbar toggleable="lg" type="dark">
-            <b-navbar-brand to="/" class="m-3"> 
+            <b-navbar-brand :to='`/${$i18n.locale}/`' class="m-3"> 
                 <svg width="50" height="50" xmlns="http://www.w3.org/2000/svg">
                     <g>
                         <title>background</title>
@@ -22,23 +22,35 @@
             
             <b-collapse id="nav-collapse" is-nav>
                 <b-navbar-nav>
-                    <b-nav-item class="m-3" to="/about">About</b-nav-item>
-                    <b-nav-item class="m-3" to="/skills">Skills</b-nav-item>
-                    <b-nav-item class="m-3" to="/projects">Projects</b-nav-item>
-                    <b-nav-item class="m-3" to="/contact">Contact</b-nav-item>
+                    <b-nav-item class="m-3" :to='`/${$i18n.locale}/about`'>{{ $t('navbar.about') }}</b-nav-item>
+                    <b-nav-item class="m-3" :to='`/${$i18n.locale}/skills`'>{{ $t('navbar.skills') }}</b-nav-item>
+                    <b-nav-item class="m-3" :to='`/${$i18n.locale}/projects`'>{{ $t('navbar.projects') }}</b-nav-item>
+                    <b-nav-item class="m-3" :to='`/${$i18n.locale}/contact`'>{{ $t('navbar.contact') }}</b-nav-item>
                 </b-navbar-nav>
 
                 <b-navbar-nav class="ml-auto">
                     <b-nav-form>
-                    <b-form-input size="sm" class="mr-sm-2 m-2" placeholder="Search..."></b-form-input>
+                    <b-form-input size="sm" class="mr-sm-2 m-2" :placeholder='$t("search") + "..."'></b-form-input>
                     </b-nav-form>
-                    <b-button id="lang-button" class="m-2"><web-icon :size="48" /></b-button>
-                    <b-popover target="lang-button" placement="bottom" variant="light" triggers="hover focus">
+                    <button id="lang-button"><web-icon :size="48" /></button>
+                    <!-- <b-popover target="lang-button" placement="bottom" variant="dark" triggers="hover">
                         <b-list-group>
-                            <b-list-group-item href="#">EN</b-list-group-item>
-                            <b-list-group-item href="#">PL</b-list-group-item>
+                            <b-list-group-item @click='setLocale("en")' button>EN</b-list-group-item>
+                            <b-list-group-item @click='setLocale("pl")' button>PL</b-list-group-item>
                         </b-list-group>
-                    </b-popover>
+                    </b-popover> -->
+                    <b-popover
+                        target="lang-button"
+                        triggers="hover click"
+                        placement="bottom"
+                    >
+                        <div>
+                            <b-list-group>
+                                <b-list-group-item @click='setLocale("en")' button>{{$t('navbar.en')}}</b-list-group-item>
+                                <b-list-group-item @click='setLocale("pl")' button>{{$t('navbar.pl')}}</b-list-group-item>
+                            </b-list-group>
+                        </div>
+                        </b-popover>
                 </b-navbar-nav>
             </b-collapse>
         </b-navbar>
@@ -52,31 +64,65 @@ export default {
     name: "navbar",
     components: {
         WebIcon
+    },
+    methods: {
+        setLocale: function (locale) {
+            this.$i18n.locale = locale
+            this.$router.push({
+                params: {
+                    lang: locale
+                }
+            })
+        }
     }
 }
 </script>
 
 <style scoped>
-/* Logo and links normal font color */
-.btn, .navbar-dark .navbar-nav .nav-link {
+/* Buttons, logo and links normal font color */
+.btn, 
+.navbar-dark .navbar-brand, 
+.navbar-dark .navbar-nav .nav-link, 
+#lang-button {
     color: #d1d1d1;
+    outline: none;
 }
 
-/* Logo and links on hover link color + shadow */
-.btn:hover, .navbar-dark .navbar-brand:hover, .navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus {
+.list-group-item {
+    color: rgb(112, 112, 112);
+}
+
+.list-group-item:hover {
+    color: #000;
+}
+
+/* Buttons, logo and links on hover/focus color + shadow */
+.btn:hover,
+.btn:focus,
+.navbar-dark .navbar-brand:hover, 
+.navbar-dark .navbar-brand:focus, 
+.navbar-dark .navbar-nav .nav-link:hover, 
+.navbar-dark .navbar-nav .nav-link:focus, 
+#lang-button:hover {
     color: #01ffa5;
     text-shadow: 1px 1px 1px #1d1f2b;
 }
 
-/* Disable */
-.btn, .list-group-item, button {
+/* On hover the popup language button */
+/* .list-group-item:hover {
+    color: black;
+    text-shadow: 1px 1px 1px #01ffa5;
+} */
+
+/* Disable bg, borders and outlines */
+.btn, .list-group-item, #lang-button {
     background: none;
     border: none;
+    outline: none;
 }
 
-.popover a:hover {
-    color: #000;
-    text-shadow: 1px 1px rgba(0, 0, 0, 0.2);
+#lang-button {
+    margin: 1rem;
 }
 
 /* .navbar-collapse.show, .navbar-collapse.collapsing {
