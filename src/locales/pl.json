@@ -1,5 +1,6 @@
 {
 	"navbar": {
+		"homepage": "Strona główna",
 		"about": "O mnie",
 		"skills": "Umiejętności",
 		"projects": "Projekty",
@@ -10,6 +11,31 @@
 	"home": {
 		"title": "STRONA DOMOWA",
 		"subtitle": "Nie ma to jak w domu..."
+	},
+	"about": {
+		"title": "O mnie",
+		"subtitle": "Home, sweet home...",
+		"content": "Here will be some content..."
+	},
+	"skills": {
+		"title": "Umiejętności",
+		"subtitle": "Kilka technologii których najczęściej używam.",
+		"content": [
+			"Frontend:",
+			"Backend:",
+			"Hostingi:",
+			"Narzędzia:"
+		]
+	},
+	"projects": {
+		"title": "Projekty",
+		"subtitle": "Home, sweet home...",
+		"content": "Here will be some content..."
+	},
+	"contact": {
+		"title": "Kontakt",
+		"subtitle": "Home, sweet home...",
+		"content": "Here will be some content..."
 	},
 	"search": "Szukaj"
 }

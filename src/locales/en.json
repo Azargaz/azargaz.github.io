@@ -1,5 +1,6 @@
 {
 	"navbar": {
+		"homepage": "Home",
 		"about": "About",
 		"skills": "Skills",
 		"projects": "Projects",
@@ -9,7 +10,33 @@
 	},
 	"home": {
 		"title": "HOME PAGE",
-		"subtitle": "Home, sweet home..."
+		"subtitle": "Home, sweet home...",
+		"content": "Here will be some content..."
+	},
+	"about": {
+		"title": "About me",
+		"subtitle": "Home, sweet home...",
+		"content": "Here will be some content..."
+	},
+	"skills": {
+		"title": "Skills",
+		"subtitle": "Here are technologies I use in most of my projects.",
+		"content": [
+			"Frontend:",
+			"Backend:",
+			"Hostings:",
+			"Tools:"
+		]
+	},
+	"projects": {
+		"title": "Projects",
+		"subtitle": "Home, sweet home...",
+		"content": "Here will be some content..."
+	},
+	"contact": {
+		"title": "Contact me",
+		"subtitle": "Home, sweet home...",
+		"content": "Here will be some content..."
 	},
 	"search": "Search"
 }

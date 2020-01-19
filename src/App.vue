@@ -26,17 +26,18 @@ export default {
 	-moz-osx-font-smoothing: grayscale;
 	text-align: center;
 	color: #2c3e50;
-	margin-top: 30px;
 }
 
 body {
 	background-color: #1d1f2b;
+	margin: 0;
+	padding: 0;
 }
 
 .navbar-bg {
 	background-color: rgba(0,0,0,0);
 	color: white;
-	margin: 0px 50px;
+	margin: 10px 50px;
 }
 
 .bg-img {
@@ -47,17 +48,19 @@ body {
     filter: blur(8px);
     -webkit-filter: blur(8px);
 
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
+	background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     z-index: -1;
 }
 
 .jumbotron {
+	padding: 5px;
 	color: #fff;
     background-color: #1d1f2b;
     background-color: rgba(0,0,0,0);

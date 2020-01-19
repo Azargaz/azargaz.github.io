@@ -1,16 +1,16 @@
 <template>
     <div>
         <b-jumbotron>
-            <!-- <template v-slot:header>BootstrapVue</template> -->
+            <template v-slot:header>{{ $t('contact.title') }}</template>
 
             <template v-slot:lead>
-            Contact page...
+                {{ $t('contact.subtitle') }}
             </template>
 
             <hr class="my-4">
 
             <p>
-            This is example text.
+                {{ $t('contact.content') }}
             </p>
 
             <b-button variant="primary" href="#">Do Something</b-button>

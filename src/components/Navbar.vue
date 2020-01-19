@@ -22,6 +22,7 @@
             
             <b-collapse id="nav-collapse" is-nav>
                 <b-navbar-nav>
+                    <b-nav-item class="m-3" :to='`/${$i18n.locale}/`'>{{ $t('navbar.homepage') }}</b-nav-item>
                     <b-nav-item class="m-3" :to='`/${$i18n.locale}/about`'>{{ $t('navbar.about') }}</b-nav-item>
                     <b-nav-item class="m-3" :to='`/${$i18n.locale}/skills`'>{{ $t('navbar.skills') }}</b-nav-item>
                     <b-nav-item class="m-3" :to='`/${$i18n.locale}/projects`'>{{ $t('navbar.projects') }}</b-nav-item>

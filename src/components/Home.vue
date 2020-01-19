@@ -10,7 +10,7 @@
             <hr class="my-4">
 
             <p>
-            This is example text.
+                {{ $t('home.content') }}
             </p>
 
             <b-button variant="primary" href="#">Do Something</b-button>
