@@ -30,16 +30,10 @@
                 </b-navbar-nav>
 
                 <b-navbar-nav class="ml-auto">
-                    <b-nav-form>
-                    <b-form-input size="sm" class="mr-sm-2 m-2" :placeholder='$t("search") + "..."'></b-form-input>
-                    </b-nav-form>
+                    <!-- <b-nav-form>
+                        <b-form-input size="sm" class="mr-sm-2 m-2" :placeholder='$t("search") + "..."'></b-form-input>
+                    </b-nav-form> -->
                     <button id="lang-button"><web-icon :size="48" /></button>
-                    <!-- <b-popover target="lang-button" placement="bottom" variant="dark" triggers="hover">
-                        <b-list-group>
-                            <b-list-group-item @click='setLocale("en")' button>EN</b-list-group-item>
-                            <b-list-group-item @click='setLocale("pl")' button>PL</b-list-group-item>
-                        </b-list-group>
-                    </b-popover> -->
                     <b-popover
                         target="lang-button"
                         triggers="hover click"

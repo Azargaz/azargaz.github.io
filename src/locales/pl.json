@@ -9,17 +9,17 @@
 		"pl": "Polski"
 	},
 	"home": {
-		"title": "STRONA DOMOWA",
-		"subtitle": "Nie ma to jak w domu..."
+		"title": "HUBERT JAKUBEK",
+		"subtitle": "Full stack JS Developer",
+		"content": ""
 	},
 	"about": {
 		"title": "O mnie",
-		"subtitle": "Home, sweet home...",
-		"content": "Here will be some content..."
+		"subtitle": "O mnie..."
 	},
 	"skills": {
 		"title": "Umiejętności",
-		"subtitle": "Kilka technologii których najczęściej używam.",
+		"subtitle": "Kilka technologii które do tej pory poznałem.",
 		"content": [
 			"Frontend:",
 			"Backend:",
@@ -29,13 +29,16 @@
 	},
 	"projects": {
 		"title": "Projekty",
-		"subtitle": "Home, sweet home...",
-		"content": "Here will be some content..."
+		"subtitle": "Lista moich projektów (dane pobrane bezpośrednio z mojego GitHuba).",
+		"repository": "Repozytorium",
+		"desc": "Opis",
+		"lang": "Język programowania",
+		"size": "Rozmiar"
 	},
 	"contact": {
 		"title": "Kontakt",
-		"subtitle": "Home, sweet home...",
-		"content": "Here will be some content..."
+		"subtitle": "Zkontaktuj się ze mną.",
+		"linkedin": "https://www.linkedin.com/in/hubert-j/?locale=pl_PL"
 	},
 	"search": "Szukaj"
 }

@@ -9,18 +9,17 @@
 		"pl": "Polish"
 	},
 	"home": {
-		"title": "HOME PAGE",
-		"subtitle": "Home, sweet home...",
-		"content": "Here will be some content..."
+		"title": "HUBERT JAKUBEK",
+		"subtitle": "Full stack JS Developer",
+		"content": ""
 	},
 	"about": {
 		"title": "About me",
-		"subtitle": "Home, sweet home...",
-		"content": "Here will be some content..."
+		"subtitle": "About me..."
 	},
 	"skills": {
 		"title": "Skills",
-		"subtitle": "Here are technologies I use in most of my projects.",
+		"subtitle": "Here are technologies I know.",
 		"content": [
 			"Frontend:",
 			"Backend:",
@@ -30,13 +29,18 @@
 	},
 	"projects": {
 		"title": "Projects",
-		"subtitle": "Home, sweet home...",
-		"content": "Here will be some content..."
+		"subtitle": "List of my projects (data directly from my GitHub).",
+		"repository": "Repository",
+		"desc": "Description",
+		"lang": "Programming language",
+		"size": "Size"
 	},
 	"contact": {
 		"title": "Contact me",
-		"subtitle": "Home, sweet home...",
-		"content": "Here will be some content..."
+		"subtitle": "Here are ways to contact me.",
+		"email": "hjakubek9@gmail.com",
+		"github": "https://github.com/azargaz",
+		"linkedin": "https://www.linkedin.com/in/hubert-j/?locale=en_US"
 	},
 	"search": "Search"
 }
