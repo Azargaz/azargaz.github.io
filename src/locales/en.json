@@ -33,7 +33,9 @@
 		"repository": "Repository",
 		"desc": "Description",
 		"lang": "Programming language",
-		"size": "Size"
+		"size": "Size",
+		"created_at": "Created at",
+		"updated_at": "Last updated"
 	},
 	"contact": {
 		"title": "Contact me",

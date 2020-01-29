@@ -33,7 +33,9 @@
 		"repository": "Repozytorium",
 		"desc": "Opis",
 		"lang": "Język programowania",
-		"size": "Rozmiar"
+		"size": "Rozmiar",
+		"created_at": "Data utworzenia",
+		"updated_at": "Ostatnia aktualizacja"
 	},
 	"contact": {
 		"title": "Kontakt",
